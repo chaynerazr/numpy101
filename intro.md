@@ -46,33 +46,39 @@ By the way, the {numref}`jupiter-figure` is just getting from item 3 of module 8
 
 And finally, I hope you enjoy this journey.
 
-### What is numpy
+### So, What is numpy, you asked?
+
+```{margin} I am not sure what I should write here?
+Maybe just nothing...
+```
 
 Basically, it's just a library that have collection of mathematic opertions. For example, if you want to calculate to fine `x` in the following formula.
 
-$$
+```{math}
+:label: sine
 x=\sin(\frac{\pi}{2})
-$$
+```
 
-You can just write the code like this in python.
+From {eq}`sine` above, Python code is:
 
 ```python
 x = np.sin(np.pi/2)
 ```
 
-or this formula
+or this formala which show the relation ship between $\sin$ , $\cos$ and $\tan$.
 
-$$
+```{math}
+:label: tan
 \tan x  = \frac{\sin x}{\cos x}
-$$
+```
 
-with this python code
+Again, from {eq}`tan`, this can be done in Python code.
 
 ```python
 np.tan(x) == np.sin(x)/np.cos(x)
 ```
 
-### So, what next, you asked?
+### Then, what next
 
 This following is table of contents of this book.
 ```{tableofcontents}
