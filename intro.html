@@ -50,9 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="Trying Basic" href="trying-basic.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,8 +116,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
+  <a class="reference internal" href="trying-basic.html">
+   Trying Basic
   </a>
  </li>
  <li class="toctree-l1">
@@ -316,8 +318,13 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#so-what-next-you-asked">
-     So, what next, you asked?
+    <a class="reference internal nav-link" href="#so-what-is-numpy-you-asked">
+     So, What is numpy, you asked?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#then-what-next">
+     Then, what next
     </a>
    </li>
   </ul>
@@ -352,8 +359,13 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#so-what-next-you-asked">
-     So, what next, you asked?
+    <a class="reference internal nav-link" href="#so-what-is-numpy-you-asked">
+     So, What is numpy, you asked?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#then-what-next">
+     Then, what next
     </a>
    </li>
   </ul>
@@ -372,31 +384,63 @@ title="Print to PDF"
 <h1>Welcome to Numpy101<a class="headerlink" href="#welcome-to-numpy101" title="Permalink to this headline">#</a></h1>
 <section id="introduction">
 <span id="introduction-h2"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
-<p>This book is inspired by <a class="reference external" href="https://python101.ml/intro.html">Python101</a> to explain how numpy doing. Many content here is just from default content when you run the following commands.</p>
+<p>This book is inspired by <a class="reference external" href="https://python101.ml/intro.html">Python101</a> to explain how (numpy)[<a class="reference external" href="https://numpy.org/">https://numpy.org/</a>] fit in data scient. The <strong>Python101</strong> book is quite cute that you can see from their front page:</p>
+<figure class="align-default" id="python101-frontpage">
+<a class="reference internal image-reference" href="_images/python101_frontpage.png"><img alt="_images/python101_frontpage.png" src="_images/python101_frontpage.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Python101 is so cute!!</span><a class="headerlink" href="#python101-frontpage" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Many content here is just from default content when you run the following commands.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book create my-book/
 </pre></div>
 </div>
-<p>This required you to have install python package from <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupuyter Book</a></p>
-<p>The book is the final assignment from the course <a class="reference external" href="https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041">The Data Science Toolbook</a> which only intentionally teach how to use tool related to data scientist.</p>
+<p>This required you to have install python package from <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupuyter Book</a> that you can install it by</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyter-book
+</pre></div>
+</div>
+<p>and it can</p>
+<p>The book is the final assignment from the course <a class="reference external" href="https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041">The Data Science Toolbook</a> which only intentionally teach how to use tool related to data scientt but it should not be graded against the quality of contents inside it but only on how I can demonstrate using Jupyter Book, Jupeter Notebook to create an online booe. So, please read the <a class="reference internal" href="#disclaimer-h2"><span class="std std-ref">Disclaimer &amp; Apology</span></a> carefullly.</p>
 </section>
 <section id="disclaimer-apology">
-<h2>Disclaimer &amp; Apology<a class="headerlink" href="#disclaimer-apology" title="Permalink to this headline">#</a></h2>
+<span id="disclaimer-h2"></span><h2>Disclaimer &amp; Apology<a class="headerlink" href="#disclaimer-apology" title="Permalink to this headline">#</a></h2>
 <p>As mentioned in <a class="reference internal" href="#introduction-h2"><span class="std std-ref">Introduction</span></a>, this book is just an assignment, so please don’t take the content of this book seriously. I cannot be responsible for the damange that this book done if you really follow stuff here.</p>
 <p>I also want to apologise for spelling &amp; english gramartically mistake on this book. This include using informal language and being very non-academic. And from time to time you might get shown the unrelated picture of Jupiter like this:</p>
 <figure class="align-default" id="jupiter-figure">
 <a class="reference internal image-reference" href="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg"><img alt="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg" src="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg" style="height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The beautiful planet Jupiter!</span><a class="headerlink" href="#jupiter-figure" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The beautiful planet Jupiter!</span><a class="headerlink" href="#jupiter-figure" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>By the way, the <a class="reference internal" href="#jupiter-figure"><span class="std std-numref">Fig. 1</span></a> is just getting from item 3 of module 8 of the course.</p>
+<p>By the way, the <a class="reference internal" href="#jupiter-figure"><span class="std std-numref">Fig. 2</span></a> is just getting from item 3 of module 8 of the course.</p>
 <p>And finally, I hope you enjoy this journey.</p>
-<section id="so-what-next-you-asked">
-<h3>So, what next, you asked?<a class="headerlink" href="#so-what-next-you-asked" title="Permalink to this headline">#</a></h3>
+<section id="so-what-is-numpy-you-asked">
+<h3>So, What is numpy, you asked?<a class="headerlink" href="#so-what-is-numpy-you-asked" title="Permalink to this headline">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title">I am not sure what I should write here?</p>
+<p>Maybe just nothing…</p>
+</aside>
+<p>Basically, it’s just a library that have collection of mathematic opertions. For example, if you want to calculate to fine <code class="docutils literal notranslate"><span class="pre">x</span></code> in the following formula.</p>
+<div class="math notranslate nohighlight" id="equation-sine">
+<span class="eqno">(1)<a class="headerlink" href="#equation-sine" title="Permalink to this equation">#</a></span>\[x=\sin(\frac{\pi}{2})\]</div>
+<p>From <a class="reference internal" href="#equation-sine">(1)</a> above, Python code is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or this formala which show the relation ship between <span class="math notranslate nohighlight">\(\sin\)</span> , <span class="math notranslate nohighlight">\(\cos\)</span> and <span class="math notranslate nohighlight">\(\tan\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-tan">
+<span class="eqno">(2)<a class="headerlink" href="#equation-tan" title="Permalink to this equation">#</a></span>\[\tan x  = \frac{\sin x}{\cos x}\]</div>
+<p>Again, from <a class="reference internal" href="#equation-tan">(2)</a>, this can be done in Python code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="then-what-next">
+<h3>Then, what next<a class="headerlink" href="#then-what-next" title="Permalink to this headline">#</a></h3>
 <p>This following is table of contents of this book.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trying-basic.html">Trying Basic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
@@ -432,10 +476,10 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="markdown.html" title="next page">
+    <a class='right-next' id="next-link" href="trying-basic.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">Trying Basic</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
