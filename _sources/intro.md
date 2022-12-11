@@ -48,8 +48,8 @@ And finally, I hope you enjoy this journey.
 
 ### So, What is numpy, you asked?
 
-```{margin} I am not sure what I should write here?
-Maybe just nothing...
+```{margin} Where can I find Numpy?
+Visit [](https://numpy.org/)
 ```
 
 Basically, it's just a library that have collection of mathematic opertions. For example, if you want to calculate to fine `x` in the following formula.
