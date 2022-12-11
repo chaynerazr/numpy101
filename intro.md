@@ -35,13 +35,13 @@ As mentioned in [](introduction-h2), this book is just an assignment, so please 
 
 I also want to apologise for spelling & english gramartically mistake on this book. This include using informal language and being very non-academic. And from time to time you might get shown the unrelated picture of Jupiter like this:
  
- ```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
- ---
- height: 300px
- name: jupiter-figure
- ---
- The beautiful planet Jupiter!
- ```
+```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
+---
+height: 300px
+name: jupiter-figure
+---
+The beautiful planet Jupiter!
+```
 By the way, the {numref}`jupiter-figure` is just getting from item 3 of module 8 of the course.
 
 And finally, I hope you enjoy this journey.
@@ -68,11 +68,11 @@ x = np.sin(np.pi/2)
 or this formala which show the relation ship between $\sin$ , $\cos$ and $\tan$.
 
 ```{math}
-:label: tan
+:label: tangent
 \tan x  = \frac{\sin x}{\cos x}
 ```
 
-Again, from {eq}`tan`, this can be done in Python code.
+Again, from {eq}`tangent`, this can be done in Python code.
 
 ```python
 np.tan(x) == np.sin(x)/np.cos(x)

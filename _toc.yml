@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: trying-basic
+- file: trying-numpy
 - file: notebooks
 - file: markdown-notebooks
