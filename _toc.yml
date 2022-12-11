@@ -5,5 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: trying-numpy
-- file: notebooks
+- file: numpy-for-data-scientist
 - file: markdown-notebooks
