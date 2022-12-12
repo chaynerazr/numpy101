@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Numpy for Data Scientist &#8212; Get to know Numpy and beyond</title>
+    <title>Reference &#8212; Get to know Numpy and beyond</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,12 +50,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Pandas and Numpy in actions" href="numpy-with-pandas.html" />
-    <link rel="prev" title="Trying Numpy for real" href="trying-numpy.html" />
+    <link rel="prev" title="Pandas and Numpy in actions" href="numpy-with-pandas.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -144,12 +141,12 @@ const thebe_selector_output = ".output, .cell_output"
   Numpy for Data Science
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="numpy-for-data-scientist.html">
    Numpy for Data Scientist
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
@@ -168,9 +165,9 @@ const thebe_selector_output = ".output, .cell_output"
   Reference
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="reference.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Reference
   </a>
  </li>
@@ -264,7 +261,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/chaynerazr/numpy101/issues/new?title=Issue%20on%20page%20%2Fnumpy-for-data-scientist.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/chaynerazr/numpy101/issues/new?title=Issue%20on%20page%20%2Freference.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -292,7 +289,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/numpy-for-data-scientist.md"
+        <a href="_sources/reference.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -329,70 +326,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#recap">
-   Recap
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#numpy-with-pandas">
-   Numpy with Pandas
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Numpy for Data Scientist</h1>
+                <h1>Reference</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#recap">
-   Recap
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#numpy-with-pandas">
-   Numpy with Pandas
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -400,75 +350,38 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="numpy-for-data-scientist">
-<h1>Numpy for Data Scientist<a class="headerlink" href="#numpy-for-data-scientist" title="Permalink to this headline">#</a></h1>
-<section id="recap">
-<h2>Recap<a class="headerlink" href="#recap" title="Permalink to this headline">#</a></h2>
-<p>Just in case that you are curious what is mathematic formula for <a class="reference internal" href="trying-numpy.html#unit-circle"><span class="std std-numref">Fig. 4</span></a> of the former <a class="reference internal" href="trying-numpy.html"><span class="doc std std-doc">chapter</span></a>.</p>
-<div class="math notranslate nohighlight" id="equation-pythagorean-formula">
-<span class="eqno">(5)<a class="headerlink" href="#equation-pythagorean-formula" title="Permalink to this equation">#</a></span>\[\sin^2\theta + \cos^2\theta = 1\]</div>
-<p><a class="reference internal" href="#equation-pythagorean-formula">(5)</a> is called Pythagorean formula for sines and cosines. This is probrably the most important identity according to this website from <a class="reference external" href="https://www2.clarku.edu/faculty/djoyce/trig/identities.html">Clark Univeristy</a><span id="id1">[<a class="reference internal" href="reference.html#id7" title="David E. Joyce. Summary of trigonometric identities. https://www2.clarku.edu/faculty/djoyce/trig/identities.html. Accessed: 2022-12-10.">6</a>]</span>. But if you are interested on formula that has important name in it. Those followings are called “Ptolemy’s identities”.</p>
-<aside class="margin sidebar">
-<p class="sidebar-title">More formula for Trigonometry</p>
-<p>Please visit <a class="reference external" href="https://www2.clarku.edu/faculty/djoyce/trig/identities.html">Dave’s site</a>. There is a compilation there!</p>
-</aside>
-<div class="math notranslate nohighlight" id="equation-ptolemy-formula1">
-<span class="eqno">(6)<a class="headerlink" href="#equation-ptolemy-formula1" title="Permalink to this equation">#</a></span>\[\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta\]</div>
-<div class="math notranslate nohighlight" id="equation-ptolemy-formula2">
-<span class="eqno">(7)<a class="headerlink" href="#equation-ptolemy-formula2" title="Permalink to this equation">#</a></span>\[\cos(\alpha + \beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta\]</div>
-<div class="math notranslate nohighlight" id="equation-ptolemy-formula3">
-<span class="eqno">(8)<a class="headerlink" href="#equation-ptolemy-formula3" title="Permalink to this equation">#</a></span>\[\sin(\alpha - \beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta\]</div>
-<div class="math notranslate nohighlight" id="equation-ptolemy-formula4">
-<span class="eqno">(9)<a class="headerlink" href="#equation-ptolemy-formula4" title="Permalink to this equation">#</a></span>\[\cos(\alpha - \beta) = \cos\alpha\cos\beta + \cos\alpha\sin\beta\]</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Pythagorus and Ptolemy are ancient greek scolars.</p>
-</div>
-</section>
-<section id="numpy-with-pandas">
-<span id="numpy-with-panda"></span><h2>Numpy with Pandas<a class="headerlink" href="#numpy-with-pandas" title="Permalink to this headline">#</a></h2>
-<figure class="align-default" id="real-panda">
-<a class="reference internal image-reference" href="_images/real_panda.jpg"><img alt="_images/real_panda.jpg" src="_images/real_panda.jpg" style="height: 300px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Is it about me?</span><a class="headerlink" href="#real-panda" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>No no.. This is not about <a class="reference internal" href="#real-panda"><span class="std std-numref">Fig. 5</span></a> but aboout a library <a class="reference external" href="https://pandas.pydata.org/">pandas</a><span id="id2">[<a class="reference internal" href="reference.html#id8" title="NumFOCUS Inc. Pandas. https://pandas.pydata.org/. Accessed: 2022-12-06.">7</a>]</span> that uses by data scientist to deal with huge amount of data.</p>
-<p>Pandas introduce the concept of dataframe and operation on it to facilitate the analysis of big data.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;A&quot;</span><span class="p">:[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-                   <span class="s2">&quot;B&quot;</span><span class="p">:[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> 
-                   <span class="s2">&quot;C&quot;</span><span class="p">:[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
-                   <span class="s2">&quot;D&quot;</span><span class="p">:[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">]})</span>
-</pre></div>
-</div>
-<p>From the code above, the data frame is created with 4 columns: A, B, C and D. as shown in <a class="reference internal" href="#dataframe"><span class="std std-numref">Fig. 6</span></a>.</p>
-<figure class="align-default" id="dataframe">
-<a class="reference internal image-reference" href="https://media.geeksforgeeks.org/wp-content/uploads/1-551.png"><img alt="https://media.geeksforgeeks.org/wp-content/uploads/1-551.png" src="https://media.geeksforgeeks.org/wp-content/uploads/1-551.png" style="height: 200px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Dataframe with 4 columns</span><a class="headerlink" href="#dataframe" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>We can calculate mean of each column with code which return result as <a class="reference internal" href="#mean"><span class="std std-numref">Fig. 7</span></a></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
-<aside class="margin sidebar">
-<p class="sidebar-title">Learn more about Pandas</p>
-<p>Code and pictures explaining here is actually from <a class="reference external" href="https://www.geeksforgeeks.org/python-pandas-dataframe-mean/">geeksforgeeks.org</a>. Please visit them to learn more!</p>
-</aside>
-<figure class="align-default" id="mean">
-<a class="reference internal image-reference" href="https://media.geeksforgeeks.org/wp-content/uploads/1-561.png"><img alt="https://media.geeksforgeeks.org/wp-content/uploads/1-561.png" src="https://media.geeksforgeeks.org/wp-content/uploads/1-561.png" style="height: 200px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Means of each colums of data frame</span><a class="headerlink" href="#mean" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>You can see that it’s quite convinient to find the means or multiple columns on just one command. This is why Pandas is the essential tools for data scientists.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>In the next chapter, we will explore how numpy and pandas work together.</p>
-</div>
-</section>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="reference">
+<h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">#</a></h1>
+<div class="docutils container" id="id1">
+<dl class="citation">
+<dt class="label" id="id2"><span class="brackets">1</span></dt>
+<dd><p>Sahil Choudhary. Python101. <a class="reference external" href="https://python101.ml/intro.html">https://python101.ml/intro.html</a>. Accessed: 2022-12-08.</p>
+</dd>
+<dt class="label" id="id3"><span class="brackets">2</span></dt>
+<dd><p>Numpy Development teams. Numpy. <a class="reference external" href="https://numpy.org/">https://numpy.org/</a>. Accessed: 2022-12-06.</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets">3</span></dt>
+<dd><p>JupyterBook Development teams. Jupyterbook. <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">https://jupyterbook.org/en/stable/intro.html</a>. Accessed: 2022-12-06.</p>
+</dd>
+<dt class="label" id="id5"><span class="brackets">4</span></dt>
+<dd><p>The University of British Columbia. The data science toolbox. <a class="reference external" href="https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041">https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041</a>. Accessed: 2022-12-06.</p>
+</dd>
+<dt class="label" id="id6"><span class="brackets">5</span></dt>
+<dd><p>Khan Academy. Trigonometry. <a class="reference external" href="https://www.khanacademy.org/math/trigonometry">https://www.khanacademy.org/math/trigonometry</a>. Accessed: 2022-12-06.</p>
+</dd>
+<dt class="label" id="id7"><span class="brackets">6</span></dt>
+<dd><p>David E. Joyce. Summary of trigonometric identities. <a class="reference external" href="https://www2.clarku.edu/faculty/djoyce/trig/identities.html">https://www2.clarku.edu/faculty/djoyce/trig/identities.html</a>. Accessed: 2022-12-10.</p>
+</dd>
+<dt class="label" id="id8"><span class="brackets">7</span></dt>
+<dd><p>NumFOCUS Inc. Pandas. <a class="reference external" href="https://pandas.pydata.org/">https://pandas.pydata.org/</a>. Accessed: 2022-12-06.</p>
+</dd>
+<dt class="label" id="id9"><span class="brackets">8</span></dt>
+<dd><p>Eunjoo Byeon. Speed testing pandas vs. numpy. <a class="reference external" href="https://towardsdatascience.com/speed-testing-pandas-vs-numpy-ffbf80070ee7">https://towardsdatascience.com/speed-testing-pandas-vs-numpy-ffbf80070ee7</a>. Accessed: 2022-12-11.</p>
+</dd>
+<dt class="label" id="id10"><span class="brackets">9</span></dt>
+<dd><p>Altair Developers. Vega-altair: declarative visualization in python. <a class="reference external" href="https://altair-viz.github.io/">https://altair-viz.github.io/</a>. Accessed: 2022-12-11.</p>
+</dd>
+</dl>
 </div>
 </section>
 
@@ -499,19 +412,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="trying-numpy.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="numpy-with-pandas.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Trying Numpy for real</p>
+            <p class="prev-next-title">Pandas and Numpy in actions</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="numpy-with-pandas.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Pandas and Numpy in actions</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

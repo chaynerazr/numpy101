@@ -117,35 +117,61 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Introduction
+  Numpy101
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Introduction to Numpy
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="trying-numpy.html">
-   Trying Numpy for real
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trying-numpy.html">
+     Trying Numpy for real
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Data Scient
+  Numpy for Data Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="numpy-for-data-scientist.html">
+   Numpy for Data Scientist
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="numpy-with-pandas.html">
+     Pandas and Numpy in actions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="numpy-for-data-scientist.html">
-   Numpy for Data Scientist
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="numpy-with-pandas.html">
-   Pandas and Numpy
+  <a class="reference internal" href="reference.html">
+   Reference
   </a>
  </li>
 </ul>
@@ -392,7 +418,7 @@ title="Print to PDF"
 <h1>Introduction to Numpy<a class="headerlink" href="#introduction-to-numpy" title="Permalink to this headline">#</a></h1>
 <section id="inspiration-installation">
 <span id="inspiration-h2"></span><h2>Inspiration &amp; Installation<a class="headerlink" href="#inspiration-installation" title="Permalink to this headline">#</a></h2>
-<p>This book is inspired by <a class="reference external" href="https://python101.ml/intro.html">Python101</a> to explain how (numpy)[<a class="reference external" href="https://numpy.org/">https://numpy.org/</a>] fit in data scient. The <strong>Python101</strong> book is quite cute that you can see from their front page:</p>
+<p>This book is inspired by <a class="reference external" href="https://python101.ml/intro.html">Python101</a><span id="id1">[<a class="reference internal" href="reference.html#id2" title="Sahil Choudhary. Python101. https://python101.ml/intro.html. Accessed: 2022-12-08.">1</a>]</span> to explain how <a class="reference external" href="https://numpy.org/">numpy</a><span id="id2">[<a class="reference internal" href="reference.html#id3" title="Numpy Development teams. Numpy. https://numpy.org/. Accessed: 2022-12-06.">2</a>]</span> fit in data scient. The <strong>Python101</strong> book is quite cute that you can see from their front page:</p>
 <figure class="align-default" id="python101-frontpage">
 <a class="reference internal image-reference" href="_images/python101_frontpage.png"><img alt="_images/python101_frontpage.png" src="_images/python101_frontpage.png" style="height: 300px;" /></a>
 <figcaption>
@@ -403,11 +429,11 @@ title="Print to PDF"
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book create my-book/
 </pre></div>
 </div>
-<p>This required you to have install python package from <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupuyter Book</a> that you can install it by</p>
+<p>This required you to have install python package from <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupuyter Book</a><span id="id3">[<a class="reference internal" href="reference.html#id4" title="JupyterBook Development teams. Jupyterbook. https://jupyterbook.org/en/stable/intro.html. Accessed: 2022-12-06.">3</a>]</span> that you can install it by</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyter-book
 </pre></div>
 </div>
-<p>The book is the final assignment from the course <a class="reference external" href="https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041">The Data Science Toolbook</a> which only intentionally teach how to use tool related to data scientt but it should not be graded against the quality of contents inside it but only on how I can demonstrate using Jupyter Book, Jupeter Notebook to create an online booe. So, please read the <a class="reference internal" href="#disclaimer-h2"><span class="std std-ref">Disclaimer &amp; Apology</span></a> carefullly.</p>
+<p>The book is the final assignment from the course <a class="reference external" href="https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041">The Data Science Toolbook</a><span id="id4">[<a class="reference internal" href="reference.html#id5" title="The University of British Columbia. The data science toolbox. https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041. Accessed: 2022-12-06.">4</a>]</span> which only intentionally teach how to use tool related to data scientt but it should not be graded against the quality of contents inside it but only on how I can demonstrate using Jupyter Book, Jupeter Notebook to create an online booe. So, please read the <a class="reference internal" href="#disclaimer-h2"><span class="std std-ref">Disclaimer &amp; Apology</span></a> carefullly.</p>
 </section>
 <section id="disclaimer-apology">
 <span id="disclaimer-h2"></span><h2>Disclaimer &amp; Apology<a class="headerlink" href="#disclaimer-apology" title="Permalink to this headline">#</a></h2>
@@ -454,6 +480,8 @@ title="Print to PDF"
 </div>
 </section>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
