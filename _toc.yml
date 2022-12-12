@@ -2,8 +2,13 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: trying-numpy
-- file: numpy-for-data-scientist
-- file: markdown-notebooks
+root: welcome
+parts:
+- caption: Introduction
+  chapters:
+  - file: intro
+  - file: trying-numpy
+- caption: Data Scient
+  chapters:
+  - file: numpy-for-data-scientist
+  - file: numpy-with-pandas
