@@ -8,7 +8,7 @@ Just in case that you are curious what is mathematic formula for {numref}`unit-c
 \sin^2\theta + \cos^2\theta = 1
 ```
 
-{eq}`pythagorean-formula` is called Pythagorean formula for sines and cosines. This is probrably the most important identity according to this website from [Clark Univeristy](https://www2.clarku.edu/faculty/djoyce/trig/identities.html). But if you are interested on formula that has important name in it. Those followings are called "Ptolemy's identities".
+{eq}`pythagorean-formula` is called Pythagorean formula for sines and cosines. This is probrably the most important identity according to this website from [Clark Univeristy](https://www2.clarku.edu/faculty/djoyce/trig/identities.html){cite:p}`TrigonometryOnClackUniversity`. But if you are interested on formula that has important name in it. Those followings are called "Ptolemy's identities".
 ```{margin} More formula for Trigonometry
 Please visit [Dave's site](https://www2.clarku.edu/faculty/djoyce/trig/identities.html). There is a compilation there!
 ```
@@ -41,7 +41,7 @@ name: real-panda
 Is it about me?
 ```
 
-No no.. This is not about {numref}`real-panda` but aboout a library [pandas](https://pandas.pydata.org/) that uses by data scientist to deal with huge amount of data.
+No no.. This is not about {numref}`real-panda` but aboout a library [pandas](https://pandas.pydata.org/){cite:p}`PandasSite` that uses by data scientist to deal with huge amount of data.
 
 Pandas introduce the concept of dataframe and operation on it to facilitate the analysis of big data.
 

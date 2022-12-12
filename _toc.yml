@@ -4,11 +4,16 @@
 format: jb-book
 root: welcome
 parts:
-- caption: Introduction
+- caption: Numpy101
   chapters:
   - file: intro
-  - file: trying-numpy
-- caption: Data Scient
+    sections:
+    - file: trying-numpy
+- caption: Numpy for Data Science
   chapters:
   - file: numpy-for-data-scientist
-  - file: numpy-with-pandas
+    sections:
+    - file: numpy-with-pandas
+- caption: Reference
+  chapters:
+  - file: reference.md

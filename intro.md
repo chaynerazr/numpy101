@@ -3,7 +3,7 @@
 (inspiration-h2)=
 ## Inspiration & Installation
 
-This book is inspired by [Python101](https://python101.ml/intro.html) to explain how (numpy)[https://numpy.org/] fit in data scient. The **Python101** book is quite cute that you can see from their front page:
+This book is inspired by [Python101](https://python101.ml/intro.html){cite:p}`Python101Book` to explain how [numpy](https://numpy.org/){cite:p}`NumpySite` fit in data scient. The **Python101** book is quite cute that you can see from their front page:
 
 ```{figure} images/python101_frontpage.png
 ---
@@ -19,12 +19,12 @@ Many content here is just from default content when you run the following comman
 jupyter-book create my-book/
 ```
 
-This required you to have install python package from [Jupuyter Book](https://jupyterbook.org/en/stable/intro.html) that you can install it by
+This required you to have install python package from [Jupuyter Book](https://jupyterbook.org/en/stable/intro.html){cite:p}`JupyterBookSite` that you can install it by
 ```shell
 conda install -c conda-forge jupyter-book
 ```
 
-The book is the final assignment from the course [The Data Science Toolbook](https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041) which only intentionally teach how to use tool related to data scientt but it should not be graded against the quality of contents inside it but only on how I can demonstrate using Jupyter Book, Jupeter Notebook to create an online booe. So, please read the [](disclaimer-h2) carefullly.
+The book is the final assignment from the course [The Data Science Toolbook](https://extendedlearning.ubc.ca/courses/data-science-toolbox/fs041){cite:p}`DataScienceToolBoxCourse` which only intentionally teach how to use tool related to data scientt but it should not be graded against the quality of contents inside it but only on how I can demonstrate using Jupyter Book, Jupeter Notebook to create an online booe. So, please read the [](disclaimer-h2) carefullly.
 
 (disclaimer-h2)=
 ## Disclaimer & Apology
