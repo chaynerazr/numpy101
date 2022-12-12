@@ -651,7 +651,79 @@ title="Print to PDF"
 </table>
 </div></div></div>
 </div>
-<p>It’s the same!!</p>
+<p>It gets updated as well.</p>
+<p>We can plot graph using Altair library that accept pandas Dataframe.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+
+<span class="n">median_gr</span> <span class="o">=</span> <span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">())</span>
+               <span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span>
+               <span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;D:Q&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">),</span>
+                       <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;index:O&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;row&#39;</span><span class="p">))</span>
+               <span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+            <span class="p">)</span>
+<span class="n">median_gr</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-36e368df4bad45cdaf70ae94cae6f7d9"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-36e368df4bad45cdaf70ae94cae6f7d9") {
+      outputDiv = document.getElementById("altair-viz-36e368df4bad45cdaf70ae94cae6f7d9");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-58d16081ff106beff153b0d67762f8ed"}, "mark": "bar", "encoding": {"x": {"field": "index", "title": "row", "type": "ordinal"}, "y": {"field": "D", "title": "median", "type": "quantitative"}}, "height": 300, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-58d16081ff106beff153b0d67762f8ed": [{"index": 0, "A": 12, "B": 5, "C": 20, "D": 8}, {"index": 1, "A": 4, "B": 2, "C": 16, "D": 3}, {"index": 2, "A": 5, "B": 54, "C": 7, "D": 29}, {"index": 3, "A": 44, "B": 3, "C": 3, "D": 23}, {"index": 4, "A": 1, "B": 2, "C": 8, "D": 1}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
 </section>
 </section>
 
